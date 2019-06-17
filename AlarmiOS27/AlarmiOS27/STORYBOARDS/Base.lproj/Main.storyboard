@@ -12,7 +12,7 @@
         <!--Root View Controller-->
         <scene sceneID="O6U-l8-TJh">
             <objects>
-                <tableViewController id="CAB-St-VhL" sceneMemberID="viewController">
+                <tableViewController id="CAB-St-VhL" customClass="AlarmListTableViewController" customModule="AlarmiOS27" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mz5-lm-5ol">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,6 +25,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Egi-DL-gl7" kind="show" identifier="toAlarmDetailTableVC" id="dCa-By-9cz"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -33,17 +36,21 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="4xf-Xc-IPr">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="rSp-2l-2Gs"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="rSp-2l-2Gs">
+                            <connections>
+                                <segue destination="Egi-DL-gl7" kind="show" id="Cgp-sw-NTU"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fAd-i8-2ga" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="74" y="0.0"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Alarm Detail Table View Controller-->
         <scene sceneID="08J-Vv-fRl">
             <objects>
-                <tableViewController id="Egi-DL-gl7" sceneMemberID="viewController">
+                <tableViewController id="Egi-DL-gl7" customClass="AlarmDetailTableViewController" customModule="AlarmiOS27" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vdO-0r-FJk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,7 +93,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fdt-ID-4T1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="907" y="0.0"/>
+            <point key="canvasLocation" x="932" y="0.0"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CQW-UI-8uS">
@@ -105,4 +112,7 @@
             <point key="canvasLocation" x="-845" y="0.0"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="dCa-By-9cz"/>
+    </inferredMetricsTieBreakers>
 </document>
