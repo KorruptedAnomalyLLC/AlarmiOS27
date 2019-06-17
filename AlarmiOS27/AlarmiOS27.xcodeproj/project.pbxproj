@@ -14,6 +14,7 @@
 		0C74251F22B830B30031AEE6 /* AlarmListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C74251E22B830B30031AEE6 /* AlarmListTableViewController.swift */; };
 		0C74252122B830DC0031AEE6 /* AlarmDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C74252022B830DC0031AEE6 /* AlarmDetailTableViewController.swift */; };
 		0C74252422B831B90031AEE6 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C74252322B831B90031AEE6 /* SwitchTableViewCell.swift */; };
+		0C74252622B83A630031AEE6 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C74252522B83A630031AEE6 /* Alarm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		0C74251E22B830B30031AEE6 /* AlarmListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListTableViewController.swift; sourceTree = "<group>"; };
 		0C74252022B830DC0031AEE6 /* AlarmDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmDetailTableViewController.swift; sourceTree = "<group>"; };
 		0C74252322B831B90031AEE6 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
+		0C74252522B83A630031AEE6 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				0C74252222B8318F0031AEE6 /* CUSTOM CELL */,
+				0C74252522B83A630031AEE6 /* Alarm.swift */,
 			);
 			path = MODEL;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			files = (
 				0C74252122B830DC0031AEE6 /* AlarmDetailTableViewController.swift in Sources */,
 				0C74252422B831B90031AEE6 /* SwitchTableViewCell.swift in Sources */,
+				0C74252622B83A630031AEE6 /* Alarm.swift in Sources */,
 				0C74250822B82F4A0031AEE6 /* AppDelegate.swift in Sources */,
 				0C74251F22B830B30031AEE6 /* AlarmListTableViewController.swift in Sources */,
 			);
