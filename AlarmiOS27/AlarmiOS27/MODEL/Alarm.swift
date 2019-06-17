@@ -15,7 +15,7 @@ class Alarm {
     var enabled: Bool
     var uuid: String
     
-    init(fireDate: Date, name: String, enabled: Bool, uuid: String = UUID().uuidString) {
+    init(fireDate: Date, name: String, enabled: Bool = true, uuid: String = UUID().uuidString) {
         self.fireDate = fireDate
         self.name = name
         self.enabled = enabled

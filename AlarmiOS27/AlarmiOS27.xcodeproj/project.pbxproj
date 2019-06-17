@@ -15,6 +15,7 @@
 		0C74252122B830DC0031AEE6 /* AlarmDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C74252022B830DC0031AEE6 /* AlarmDetailTableViewController.swift */; };
 		0C74252422B831B90031AEE6 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C74252322B831B90031AEE6 /* SwitchTableViewCell.swift */; };
 		0C74252622B83A630031AEE6 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C74252522B83A630031AEE6 /* Alarm.swift */; };
+		0C74252922B83D740031AEE6 /* AlarmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C74252822B83D740031AEE6 /* AlarmController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0C74252022B830DC0031AEE6 /* AlarmDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmDetailTableViewController.swift; sourceTree = "<group>"; };
 		0C74252322B831B90031AEE6 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
 		0C74252522B83A630031AEE6 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		0C74252822B83D740031AEE6 /* AlarmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		0C74251C22B82FBB0031AEE6 /* CONTROLLERS */ = {
 			isa = PBXGroup;
 			children = (
+				0C74252722B83D5A0031AEE6 /* MODEL CONTROLLER */,
 				0C74251D22B8308A0031AEE6 /* VIEW CONTROLLERS */,
 			);
 			path = CONTROLLERS;
@@ -119,6 +122,14 @@
 				0C74252322B831B90031AEE6 /* SwitchTableViewCell.swift */,
 			);
 			path = "CUSTOM CELL";
+			sourceTree = "<group>";
+		};
+		0C74252722B83D5A0031AEE6 /* MODEL CONTROLLER */ = {
+			isa = PBXGroup;
+			children = (
+				0C74252822B83D740031AEE6 /* AlarmController.swift */,
+			);
+			path = "MODEL CONTROLLER";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +208,7 @@
 				0C74252622B83A630031AEE6 /* Alarm.swift in Sources */,
 				0C74250822B82F4A0031AEE6 /* AppDelegate.swift in Sources */,
 				0C74251F22B830B30031AEE6 /* AlarmListTableViewController.swift in Sources */,
+				0C74252922B83D740031AEE6 /* AlarmController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
