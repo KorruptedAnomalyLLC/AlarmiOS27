@@ -14,12 +14,11 @@ class AlarmController {
     
     var alarms: [Alarm] = []
     
-    
     func addAlarm(fireDate: Date, name: String, enabled: Bool) {
         
         let alarm = Alarm(fireDate: fireDate, name: name)
-            alarm.enabled = enabled
-            AlarmController.sharedInstance.alarms.append(alarm)
+        alarm.enabled = enabled
+        AlarmController.sharedInstance.alarms.append(alarm)
     }
     
     func update(alarm: Alarm, fireDate: Date, name: String, enabled: Bool) {
@@ -27,9 +26,13 @@ class AlarmController {
         alarm.name = name
         alarm.fireDate = fireDate
         alarm.enabled = enabled
-        
     }
     
+    func delete(alarm: Alarm) {
+        
+        guard let index = AlarmController.sharedInstance.alarms.firstIndex(of: alarm) else { return }
+        alarms.remove(at: index)
+    }
     
     
     

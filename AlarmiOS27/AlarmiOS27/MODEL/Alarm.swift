@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Alarm {
+class Alarm: Equatable, Codable {
     
     var fireDate: Date
     var name: String
@@ -28,4 +28,10 @@ class Alarm {
         formatter.timeStyle = .short
         return formatter.string(from: fireDate)
     }
+}
+
+// Equatable
+
+func == (lhs: Alarm, rhs: Alarm) -> Bool {
+    return lhs.uuid == rhs.uuid
 }
