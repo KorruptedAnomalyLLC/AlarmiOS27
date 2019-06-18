@@ -13,7 +13,7 @@ class AlarmDetailTableViewController: UITableViewController {
     var alarm: Alarm? {
         didSet {
             loadViewIfNeeded()
-          //  self.updateViews()
+           self.updateViews()
         }
     }
     
