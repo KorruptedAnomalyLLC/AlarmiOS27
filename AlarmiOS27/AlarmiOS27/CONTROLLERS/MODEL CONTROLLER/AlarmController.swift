@@ -13,6 +13,7 @@ class AlarmController {
     static let sharedInstance = AlarmController()
     
     var alarms: [Alarm] = []
+    var mockAlarms: [Alarm] = []
     
     func addAlarm(fireDate: Date, name: String, enabled: Bool) {
         
@@ -34,6 +35,10 @@ class AlarmController {
         alarms.remove(at: index)
     }
     
+    func toggleEnabled(for alarm: Alarm) {
+        alarm.enabled = !alarm.enabled
+        
+    }
     
     
     
